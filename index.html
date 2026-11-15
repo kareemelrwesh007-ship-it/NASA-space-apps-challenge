@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasa space apps challenge</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Nasa space apps challenge</h1>
+        <h2>Teams members: Kareem Haitham - Abdelrahim Youssef.</h2>
+    </header>
+
+    <main>
+        <!-- Removed 'controls' so the player is now hidden -->
+        <audio id="bgMusic" autoplay loop> 
+            <source src="حسين الجسمي - بشرة خير (فيديو كليب) _ Hussain Al Jassmi - Boshret Kheir _ 2014.mp3" type="audio/mpeg">
+        </audio>
+        
+        <br><br>
+
+        <input type="button" id="playbtn" value="Play video" onclick="playVideo();"> 
+
+        <video id="myVideo" controls>
+             <source src="elgayar video.mp4" type="video/mp4">
+             Your browser does not support the video tag.
+        </video>
+    </main>
+
+    <script>
+        // This ensures the hidden music plays the moment the user clicks anywhere on the page
+        document.body.addEventListener('click', function() {
+            var bgAudio = document.getElementById("bgMusic");
+            if (bgAudio.paused) {
+                bgAudio.play();
+            }
+        }, { once: true });
+    </script>
+</body>
+</html>
