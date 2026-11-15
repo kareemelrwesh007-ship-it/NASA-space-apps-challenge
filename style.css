@@ -1,0 +1,56 @@
+body {
+    
+    background-image: url("tamer-elmetdal3.jpg");
+    background-size: device-width;
+    margin: 0px;
+}
+
+h1 {
+    color: rgba(59, 193, 22, 0.533);
+    text-align: center;
+}
+
+h2 {
+    color: rgba(173, 204, 18, 0.533);
+    text-align: center;
+}
+
+p1 {
+    color: rgba(173, 204, 18, 0.533);
+    text-align: center;
+}
+
+
+main {
+    color: rgba(21, 0, 255, 0.533);
+    text-align: center;
+    size: 200px;
+}
+footer{
+    color: rgba(21, 0, 255, 0.533);
+    text-align: center;
+    margin: 300px;
+    border: 2px solid rgba(21, 0, 255, 0.533);
+}
+
+#myVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    background-color: black;
+    z-index: 9999;
+    
+    /* Hidden by default, ready for a smooth fade */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.8s ease-in-out; /* Controls how fast the fade is (0.8 seconds) */
+}
+
+/* When this class is added, it smoothly fades in */
+#myVideo.show {
+    opacity: 1;
+    visibility: visible;
+}
